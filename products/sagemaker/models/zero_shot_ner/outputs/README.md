@@ -3,6 +3,8 @@
 
 ### JSON Format
 
+The model generates output in the following format:
+
 ```json
 {
     "predictions": [
@@ -56,6 +58,8 @@
 
 
 ### JSON Lines (JSONL) Format
+
+The model generates output in JSON Lines format, where each line corresponds to the predictions for the respective input text:
 
 ```
 {"predictions": [{"ner_chunk": "Named Entity 1", "begin": Start Index, "end": End Index, "ner_label": "Label 1", "confidence": Score}, {"ner_chunk": "Named Entity 2", "begin": Start Index, "end": End Index, "ner_label": "Label 2", "confidence": Score}, ...]}
